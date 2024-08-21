@@ -24,7 +24,8 @@
           },
           extend: {
             colors: {
-              clifford: '#da373d',
+              'brand-color': 'rgba(171, 239, 95)',
+              'brand-color-bg': 'rgba(171, 239, 95, 0.5)',
             }
           }
         }
@@ -32,10 +33,43 @@
     </script>
 </head>
 <body class="font-Manrope">
-  <header>
+  <header class="max-lg:w-11/12 mx-auto xl:container bg-[#f8f8f8]">
     <!-- nav section -->
     <nav>
-      
+      <div class="navbar bg-base-100 justify-between">
+        <div class="navbar-start w-5/12">
+          <a href="#" class="text-3xl font-bold flex items-center gap-1">
+            <i class="fa-duotone fa-solid fa-circle-arrow-up-right" style="--fa-primary-color: #000000; --fa-secondary-color: #abef5f; --fa-secondary-opacity: 100;"></i>
+            Rinterio
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-4">
+          <button class='btn btn-circle bg-white max-sm:hidden'><i class="fa-solid fa-search"></i></button>
+          <button class='btn btn-circle bg-white max-sm:hidden'><i class="fa-regular fa-cart-shopping"></i></button>
+          <a class="btn bg-brand-color font-extrabold text-xl rounded-full max-sm:hidden">Book Consult
+          <i class="fa-duotone fa-solid fa-circle-arrow-up-right" style="--fa-primary-color: #ffffff; --fa-secondary-color: #000000; --fa-secondary-opacity: 100;"></i></a>
+          <div class="dropdown">
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-circle bg-white lg:hidden"><i class="fa-solid fa-bars text-xl"></i></div>
+              <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
     <!-- banner section -->
   </header>
