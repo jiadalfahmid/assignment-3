@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rinterio</title>
-  <link rel="shortcut icon" href="./images/banner.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
     <!-- Google fonts link -->
@@ -26,17 +26,15 @@
             colors: {
               'brand-color': 'rgba(171, 239, 95)',
               'brand-color-o': 'rgba(171, 239, 95, 0.5)',
-              bgColor2: 'rgb(17, 17, 17,0.8)',
-
+              'bg-Color-2': 'rgb(17, 17, 17,0.8)',
             }
           }
         }
       }
     </script>
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="font-Manrope">
-  <header id="header" class=" bg-zinc-100 bg-gradient-to-t from-white">
+  <header class=" bg-zinc-100 bg-gradient-to-t from-white">
     <div class="max-lg:w-11/12 mx-auto xl:container">    
       <!-- nav section -->
       <nav class="lg:pt-12">
@@ -49,11 +47,11 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
           <div class="navbar-end space-x-4">
@@ -65,11 +63,11 @@
               <div class="dropdown dropdown-end">
                 <div tabindex="0" role="button" class="btn btn-circle bg-white lg:hidden"><i class="fa-solid fa-bars text-xl"></i></div>
                 <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -140,7 +138,7 @@
     </section>
     <!-- Work section -->
     <section class="bg-zinc-100 text-center">
-      <div class="max-lg:w-11/12 mx-auto xl:container pb-8 lg:pb-20 ">
+      <div class="max-lg:w-11/12 mx-auto xl:container pb-20 lg:pb-20 ">
         <button class="btn bg-white font-bold text-xl rounded-full mb-4"><i class="fa-regular fa-arrow-right"></i> How we works</button>
         <h2 class="text-2xl md:3xl lg:text-5xl font-bold">Our Works Process</h2>
         <p class="py-6 lg:w-3/5 mx-auto">
@@ -200,60 +198,133 @@
       </div>
     </section>
     <!-- portfolio section -->
-    <section>
-
+    <section class="max-md:bg-zinc-100">
+      <div class="max-lg:w-11/12 mx-auto xl:container text-center py-8 lg:py-20">
+        <button class="btn bg-brand-color-o font-bold text-xl rounded-full mb-4 hover:bg-brand-color"><i class="fa-regular fa-arrow-right"></i>Explore our Latest works</button>
+        <h2 class="text-2xl md:3xl lg:text-5xl font-bold">Our Latest Portfolio</h2>
+        <p class="py-6 lg:w-3/5 mx-auto">
+          Explore our portfolio to see how we transform spaces with tailored designs that blend style and functionality, bringing our clients' visions to life.
+        </p>
+        <!-- portfolios -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 ">
+          <!-- card 1 -->
+          <div class="border bg-white md:flex-row md:flex md:items-center p-6 rounded-3xl space-y-4 gap-4 lg:col-span-8 md:col-span-2">
+            <figure class="">
+              <img
+                src="./images/img1.png"
+                class="rounded-xl w-full h-48" />
+            </figure>
+            <div class="text-left space-y-5 lg:w-3/5">
+              <h2 class="card-title font-extrabold">Commercial</h2>
+              <p>This innovative office design maximizes space while fostering collaboration and creativity.</p>
+              <div class="">
+                <a href="#" class="font-bold text-xl link link-hover">View Details <i class="fa-duotone fa-solid fa-circle-arrow-up-right text-3xl" style="--fa-primary-color: #000000; --fa-secondary-color: #abef5f; --fa-secondary-opacity: 100;"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="border bg-white p-6 rounded-3xl lg:col-span-4">
+            <figure class="mx-auto">
+              <img
+                src="./images/img2.png"
+                class="rounded-xl w-full h-48" />
+            </figure>
+          </div>
+          <!-- card 3 -->
+          <div class="border bg-white p-6 rounded-3xl space-y-4 lg:hidden">
+            <figure class="">
+              <img
+                src="./images/img5.png"
+                class="rounded-xl w-full h-48" />
+            </figure>
+          </div>
+          <!-- card 4 -->
+          <div class="border bg-white md:flex-row md:flex md:items-center p-6 rounded-3xl space-y-4 lg:order-1 lg:col-span-6 gap-4 md:col-span-2">
+            <figure class="">
+              <img
+                src="./images/img4.png"
+                class="rounded-xl w-full h-48" />
+            </figure>
+            <div class="text-left space-y-5 lg:w-3/5">
+              <h2 class="card-title font-extrabold">Commercial</h2>
+              <p>The modern aesthetic blends functionality with a vibrant atmosphere.</p>
+              <div class="">
+                <a href="#" class="font-bold text-xl link link-hover">View Details <i class="fa-duotone fa-solid fa-circle-arrow-up-right text-3xl" style="--fa-primary-color: #000000; --fa-secondary-color: #abef5f; --fa-secondary-opacity: 100;"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="border bg-white p-6 rounded-3xl space-y-4 lg:col-span-3">
+            <figure class="mx-auto">
+              <img
+                src="./images/img3.png"
+                class="rounded-xl w-full h-48" />
+            </figure>
+          </div>
+          <!-- card 6 -->
+          <div class="border bg-white p-6 rounded-3xl space-y-4 lg:order-2 lg:col-span-3">
+            <figure class="mx-auto">
+              <img
+                src="./images/img5.png"
+                class="rounded-xl w-full h-48" />
+            </figure>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- testimonial section -->
-    <section class="text-center pb-20 bg-zinc-100">
-      <h1 class="text-2xl md:3xl lg:text-5xl font-bold">What Our Client Say</h1>
-      <p class="py-6 lg:w-3/5 mx-auto">We believe that our work speaks for itself, but nothing says more about the quality of our services than the words of those who have experienced it firsthand.</p>
-      <div class="hero rounded-lg max-lg:w-11/12 xl:container mx-auto" style="background-image: url(https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg);">
-        <div class="w-full h-full rounded-lg bg-bgColor2 py-10 md:p-20 bg-">
-          <!-- carousel -->
-          <div class="carousel w-full text-white z-20 ">
-            <!-- Slide 1 -->
-            <div id="slide1" class="carousel-item relative w-full flex z-10 flex-col items-center">
-              <div class="avatar z-20">
-                <div class="w-24 h-24 rounded-full mb-4 z-20">
-                  <img src="https://img.freepik.com/free-photo/close-up-portrait-beautiful-student-with-redhead-hair-freckles-grey-shirt-crossing-hands-looking-with-happy-joyful-expression_176420-12000.jpg?size=626&ext=jpg&ga=GA1.1.983972292.1717758934&semt=ais_hybrid" class=""/>
+    <section class="text-center bg-zinc-100 pt-8 pb-20 lg:py-20">
+      <div class="max-lg:w-11/12 xl:container mx-auto">
+        <h1 class="text-2xl md:3xl lg:text-5xl font-bold">What Our Client Say</h1>
+        <p class="py-6 lg:w-3/5 mx-auto">We believe that our work speaks for itself, but nothing says more about the quality of our services than the words of those who have experienced it firsthand.</p>
+        <div class="hero rounded-lg" style="background-image: url(https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg);">
+          <div class="w-full h-full rounded-lg bg-bg-Color-2 py-10 md:p-20">
+            <!-- carousel -->
+            <div class="carousel w-full text-white z-20 ">
+              <!-- Slide 1 -->
+              <div id="slide1" class="carousel-item relative w-full flex z-10 flex-col items-center">
+                <div class="avatar z-20">
+                  <div class="w-24 h-24 rounded-full mb-4 z-20">
+                    <img src="https://img.freepik.com/free-photo/close-up-portrait-beautiful-student-with-redhead-hair-freckles-grey-shirt-crossing-hands-looking-with-happy-joyful-expression_176420-12000.jpg" class=""/>
+                  </div>
+                </div>
+                <h3 class="font-bold text-xl">Sarah Williams</h3>
+                <p class="mb-8">CEO, Tech Innovators</p>
+                <p class="w-3/5"><q>Rinterio truly transformed our office space into something special. The team’s attention to detail and deep understanding of our needs were nothing short of exceptional. <span class="max-sm:hidden">They didn’t just design a space; they created an environment that inspires creativity and productivity, perfectly aligning with our company’s ethos.</span></q></p>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                  <a href="#slide3" class="btn btn-ghost text-white">❮</a>
+                  <a href="#slide2" class="btn btn-ghost text-white">❯</a>
                 </div>
               </div>
-              <h3 class="font-bold text-xl">Sarah Williams</h3>
-              <p class="mb-8">CEO, Tech Innovators</p>
-              <p class="w-3/5"><q>Rinterio truly transformed our office space into something special. The team’s attention to detail and deep understanding of our needs were nothing short of exceptional. <span class="max-sm:hidden">They didn’t just design a space; they created an environment that inspires creativity and productivity, perfectly aligning with our company’s ethos.</span></q></p>
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide3" class="btn btn-ghost text-white">❮</a>
-                <a href="#slide2" class="btn btn-ghost text-white">❯</a>
-              </div>
-            </div>
-            <!-- slide 2 -->
-            <div id="slide2" class="carousel-item relative w-full flex z-10 flex-col items-center">
-              <div class="avatar z-20">
-                <div class="w-24 h-24 rounded-full mb-4 z-20">
-                  <img src="https://img.freepik.com/premium-photo/studio-portrait-handsome-senior-man_251136-94195.jpg?w=826" class=" z-30"/>
+              <!-- slide 2 -->
+              <div id="slide2" class="carousel-item relative w-full flex z-10 flex-col items-center">
+                <div class="avatar z-20">
+                  <div class="w-24 h-24 rounded-full mb-4 z-20">
+                    <img src="https://img.freepik.com/premium-photo/studio-portrait-handsome-senior-man_251136-94195.jpg" class=" z-30"/>
+                  </div>
+                </div>
+                <h3 class="font-bold text-xl">David Brown</h3>
+                <p class="mb-8">Homeowner</p>
+                <p class="w-3/5"><q>Our home has never felt more like ‘us’ than it does now, thanks to Rinterio. They perfectly captured our style and transformed our space into something both functional and beautiful. <span class="max-sm:hidden">From the initial consultation to the final touches, Rinterio’s team was attentive, creative, and truly listened to our needs.</span>  </q></p>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                  <a href="#slide1" class="btn btn-ghost text-white">❮</a>
+                  <a href="#slide3" class="btn btn-ghost text-white">❯</a>
                 </div>
               </div>
-              <h3 class="font-bold text-xl">David Brown</h3>
-              <p class="mb-8">Homeowner</p>
-              <p class="w-3/5"><q>Our home has never felt more like ‘us’ than it does now, thanks to Rinterio. They perfectly captured our style and transformed our space into something both functional and beautiful. <span class="max-sm:hidden">From the initial consultation to the final touches, Rinterio’s team was attentive, creative, and truly listened to our needs.</span>  </q></p>
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide1" class="btn btn-ghost text-white">❮</a>
-                <a href="#slide3" class="btn btn-ghost text-white">❯</a>
-              </div>
-            </div>
-            <!-- slide 3 -->
-            <div id="slide3" class="carousel-item relative w-full flex z-10 flex-col items-center">
-              <div class="avatar z-20">
-                <div class="w-24 h-24 rounded-full mb-4 z-20">
-                  <img src="https://img.freepik.com/free-photo/stylish-businesswoman-with-glasses_23-2147989567.jpg?t=st=1724347224~exp=1724350824~hmac=2def3729a98939514c799bb79425b1cf6d96f9d20ad3239af02fdd2caa521faa&w=740" class=" z-30"/>
+              <!-- slide 3 -->
+              <div id="slide3" class="carousel-item relative w-full flex z-10 flex-col items-center">
+                <div class="avatar z-20">
+                  <div class="w-24 h-24 rounded-full mb-4 z-20">
+                    <img src="https://img.freepik.com/free-photo/stylish-businesswoman-with-glasses_23-2147989567.jpg" class=" z-30"/>
+                  </div>
                 </div>
-              </div>
-              <h3 class="font-bold text-xl">Emma Clark</h3>
-              <p class="mb-8">MD, Urban Spaces</p>
-              <p class="w-3/5"><q>Working with Rinterio was an absolute pleasure from start to finish. Their team is incredibly creative, professional, and dedicated to delivering top-notch results.<span class="max-sm:hidden"> They brought fresh ideas to the table and executed them flawlessly, transforming our urban spaces into environments that are not only visually stunning but also highly functional.</span> </q></p>
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide2" class="btn btn-ghost text-white">❮</a>
-                <a href="#slide1" class="btn btn-ghost text-white">❯</a>
+                <h3 class="font-bold text-xl">Emma Clark</h3>
+                <p class="mb-8">MD, Urban Spaces</p>
+                <p class="w-3/5"><q>Working with Rinterio was an absolute pleasure from start to finish. Their team is incredibly creative, professional, and dedicated to delivering top-notch results.<span class="max-sm:hidden"> They brought fresh ideas to the table and executed them flawlessly, transforming our urban spaces into environments that are not only visually stunning but also highly functional.</span> </q></p>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                  <a href="#slide2" class="btn btn-ghost text-white">❮</a>
+                  <a href="#slide1" class="btn btn-ghost text-white">❯</a>
+                </div>
               </div>
             </div>
           </div>
@@ -303,12 +374,12 @@
       Rinterio
     </a>
     <p class="md:w-1/2 mx-auto">At Rinterio, we create spaces that harmonize aesthetic appeal with practical functionality, ensuring every project tells a unique story.</p>
-    <ul class="max-sm:space-y-8 md:flex gap-8">
-      <li><a class="link link-hover">Home</a></li>
-      <li><a class="link link-hover">Services</a></li>
-      <li><a class="link link-hover">Portfolio</a></li>
-      <li><a class="link link-hover">Blogs</a></li>
-      <li><a class="link link-hover">Contact Us</a></li>
+    <ul class="md:flex gap-8">
+      <li><a href="#" class="link link-hover">Home</a></li>
+      <li><a href="#" class="link link-hover">Services</a></li>
+      <li><a href="#" class="link link-hover">Portfolio</a></li>
+      <li><a href="#" class="link link-hover">Blogs</a></li>
+      <li><a href="#" class="link link-hover">Contact Us</a></li>
     </ul>
     <button class="btn bg-brand-color hover:bg-lime-300 font-extrabold text-xl rounded-full border-none max-sm:w-full flex">Book Consult
       <i 
