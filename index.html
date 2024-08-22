@@ -26,6 +26,8 @@
             colors: {
               'brand-color': 'rgba(171, 239, 95)',
               'brand-color-o': 'rgba(171, 239, 95, 0.5)',
+              bgColor2: 'rgb(17, 17, 17,0.8)',
+
             }
           }
         }
@@ -201,7 +203,64 @@
     <section>
 
     </section>
-    <!-- form section -->
+    <!-- testimonial section -->
+    <section class="text-center pb-20 bg-zinc-100">
+      <h1 class="text-2xl md:3xl lg:text-5xl font-bold">What Our Client Say</h1>
+      <p class="py-6 lg:w-3/5 mx-auto">We believe that our work speaks for itself, but nothing says more about the quality of our services than the words of those who have experienced it firsthand.</p>
+      <div class="hero rounded-lg max-lg:w-11/12 xl:container mx-auto" style="background-image: url(https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg);">
+        <div class="w-full h-full rounded-lg bg-bgColor2 py-10 md:p-20 bg-">
+          <!-- carousel -->
+          <div class="carousel w-full text-white z-20 ">
+            <!-- Slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full flex z-10 flex-col items-center">
+              <div class="avatar z-20">
+                <div class="w-24 h-24 rounded-full mb-4 z-20">
+                  <img src="https://img.freepik.com/free-photo/close-up-portrait-beautiful-student-with-redhead-hair-freckles-grey-shirt-crossing-hands-looking-with-happy-joyful-expression_176420-12000.jpg?size=626&ext=jpg&ga=GA1.1.983972292.1717758934&semt=ais_hybrid" class=""/>
+                </div>
+              </div>
+              <h3 class="font-bold text-xl">Sarah Williams</h3>
+              <p class="mb-8">CEO, Tech Innovators</p>
+              <p class="w-3/5"><q>Rinterio truly transformed our office space into something special. The team’s attention to detail and deep understanding of our needs were nothing short of exceptional. <span class="max-sm:hidden">They didn’t just design a space; they created an environment that inspires creativity and productivity, perfectly aligning with our company’s ethos.</span></q></p>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-ghost text-white">❮</a>
+                <a href="#slide2" class="btn btn-ghost text-white">❯</a>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full flex z-10 flex-col items-center">
+              <div class="avatar z-20">
+                <div class="w-24 h-24 rounded-full mb-4 z-20">
+                  <img src="https://img.freepik.com/premium-photo/studio-portrait-handsome-senior-man_251136-94195.jpg?w=826" class=" z-30"/>
+                </div>
+              </div>
+              <h3 class="font-bold text-xl">David Brown</h3>
+              <p class="mb-8">Homeowner</p>
+              <p class="w-3/5"><q>Our home has never felt more like ‘us’ than it does now, thanks to Rinterio. They perfectly captured our style and transformed our space into something both functional and beautiful. <span class="max-sm:hidden">From the initial consultation to the final touches, Rinterio’s team was attentive, creative, and truly listened to our needs.</span>  </q></p>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-ghost text-white">❮</a>
+                <a href="#slide3" class="btn btn-ghost text-white">❯</a>
+              </div>
+            </div>
+            <!-- slide 3 -->
+            <div id="slide3" class="carousel-item relative w-full flex z-10 flex-col items-center">
+              <div class="avatar z-20">
+                <div class="w-24 h-24 rounded-full mb-4 z-20">
+                  <img src="https://img.freepik.com/free-photo/stylish-businesswoman-with-glasses_23-2147989567.jpg?t=st=1724347224~exp=1724350824~hmac=2def3729a98939514c799bb79425b1cf6d96f9d20ad3239af02fdd2caa521faa&w=740" class=" z-30"/>
+                </div>
+              </div>
+              <h3 class="font-bold text-xl">Emma Clark</h3>
+              <p class="mb-8">MD, Urban Spaces</p>
+              <p class="w-3/5"><q>Working with Rinterio was an absolute pleasure from start to finish. Their team is incredibly creative, professional, and dedicated to delivering top-notch results.<span class="max-sm:hidden"> They brought fresh ideas to the table and executed them flawlessly, transforming our urban spaces into environments that are not only visually stunning but also highly functional.</span> </q></p>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-ghost text-white">❮</a>
+                <a href="#slide1" class="btn btn-ghost text-white">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us section -->
     <section 
       class="min-h-screen border-4 lg:border-8 border-white bg-cover py-8 lg:p-24"
       style="background-image: url(./images/bg.jpg);">
@@ -209,7 +268,7 @@
         <button class="btn bg-brand-color-o font-bold text-xl rounded-full mb-4 hover:bg-brand-color"><i class="fa-regular fa-arrow-right"></i>Let’s Connect</button>
         <h2 class="text-2xl md:3xl lg:text-5xl font-bold">Let’s Discuss Next Project</h2>
         <p class="py-6 lg:w-3/5 mx-auto">
-          At Rinterio, we create spaces that harmonize aesthetic appeal with practical functionality, ensuring every project tells a unique story.
+          Let’s bring your vision to life by crafting a space that resonates with your personality and meets your needs with innovative design solutions.
         </p>
         <!-- form starts -->
         <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-5 md:w-4/5 md:mx-auto justify-items-center">
